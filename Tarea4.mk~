@@ -1,0 +1,9 @@
+all: wave
+
+wave: Plots.py
+
+Resultados_hw4.tex: Ondas.c
+	cc Ondas.c -lm -o Ondas.x
+	./Ondas.x
+
+Resultados_hw4.tex
